@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "es6",                               // Target ES6 for modern features
+    "lib": ["dom", "dom.iterable", "esnext"],      // Include modern libraries
+    "allowJs": true,                              // Allow JavaScript files to be compiled
+    "skipLibCheck": true,                         // Skip type checking of all declaration files
+    "esModuleInterop": true,                      // Enable compatibility with CommonJS modules
+    "allowSyntheticDefaultImports": true,         // Allow default imports from modules without default exports
+    "strict": true,                               // Enable all strict type-checking options
+    "forceConsistentCasingInFileNames": true,     // Ensure file names are case-consistent
+    "noFallthroughCasesInSwitch": true,           // Report errors for fallthrough cases in switch statements
+    "module": "esnext",                           // Use the latest ECMAScript module system
+    "moduleResolution": "node",                   // Use Node.js module resolution
+    "resolveJsonModule": true,                    // Allow importing JSON files
+    "isolatedModules": true,                      // Ensure each file can be safely transpiled independently
+    "noEmit": true,                              // Do not emit output (useful for type-checking only)
+    "jsx": "react-jsx"                           // Use the new JSX transform introduced in React 17
+  },
+  "include": ["src"],                            // Include files in the src directory
+  "exclude": ["node_modules", "build"]            // Exclude these directories from type-checking
+}
