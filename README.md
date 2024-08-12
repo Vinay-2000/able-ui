@@ -2,6 +2,15 @@
 
 Frond-end for the Rawwd NGO website.
 
+# Getting Started With Develpoment
+In Folder open terminal -
+Commands:
+git clone -b "FEATURE/initial" https://github.com/Vinay-2000/rawwd-ui.git
+This will clone the branch to your local.
+
+Open in Visual Studio:
+In terminal - npm install
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
