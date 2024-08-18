@@ -1,9 +1,11 @@
 import React from "react";
-
+import About from "./About";
+import StatisticsSection from "./StatisticsSection";
 function Home() {
   return (
     <div>
-      <h1>Hello WOrld</h1>
+      <About />
+      <StatisticsSection />
     </div>
   );
 }
