@@ -56,7 +56,7 @@ const Counter: React.FC<CounterProps> = ({ end, duration }) => {
 
 const StatisticsSection: React.FC = () => {
   return (
-    <div className="statistics-container">
+    <div className="statistics-container" style={{ marginBottom: '80px' }}>
       <div className="statistics-box">
         <img
           src="/images/aboutImg/compaigns.png"
@@ -89,6 +89,7 @@ const StatisticsSection: React.FC = () => {
         <Counter end={1294} duration={2000} />
         <p className="statistics-description">Happy volunteers</p>
       </div>
+      <br></br>
     </div>
   );
 };

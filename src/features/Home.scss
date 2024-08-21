@@ -155,3 +155,133 @@
     width: 80%; // Make boxes take up more width on smaller screens
   }
 }
+
+
+.contact-us-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-color:rgb(43, 39, 39);
+  padding: 0 50px;
+  position: relative; /* To allow absolute positioning of the title */
+}
+.grayscale-image {
+  filter: grayscale(100%);
+}
+/* Title style */
+.contact-title {
+  position: absolute;
+  top: 20px;
+  left: 100px; /* Increased left position */
+  padding: 10px;
+  color: #7bc6d7;
+  font-size: 20px;
+}
+
+
+/* Form container */
+.contact-form-container {
+  background-color:rgba(126, 198, 215, 0.7);
+  padding: 50px;
+  border-radius: 15px;
+  max-width: 350px;
+  width: 90%;
+}
+
+/* Form label styles */
+.contact-form label {
+  text-align: left;
+  color: white;
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+/* Form input and textarea styles */
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 5px;
+}
+
+/* Button styles */
+.contact-form button {
+  float: left;
+  width: 45%;
+  padding: 10px 20px;
+  text-align: start;
+  font-size: 14px;
+  font-weight: bold;
+  background-color: #f3ef0b;
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #ff6f61;
+}
+.boxes-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  width: 60%;
+  
+}
+
+.box {
+  background-color:rgba(126, 198, 215, 0.7);
+  padding: 20px;
+  width: 70%;
+  text-align: start;
+  display: flex; /* Make the box a flex container */
+  flex-direction: column; /* Arrange content vertically */
+  align-items: flex-start;
+  border-radius: 15px;
+}
+
+.box h3 {
+  color: white;
+  align-items: first baseline;
+  margin-bottom: 20px;
+}
+.box p{
+  align-items: center;
+}
+.logo {
+  width: 50px;
+  height: 60px;
+  margin-bottom: 10px;
+  background-color: transparent;
+}
+.logo-content {
+display: flex;
+align-items: center;
+background-color: white;
+border-radius: 10px;
+width: 100%;
+}
+
+.logo {
+  margin-left: 10px;
+margin-right: 20px; /* Adjust margin as needed */
+}
+.flex-row {
+  display: flex;
+  justify-content: space-between; /* Distribute space evenly */
+  width: 75%; /* Ensure the container takes full width */
+  gap:15px;
+}
+.half-width {
+  width: 60%; /* Set width to half of the first box */
+}
