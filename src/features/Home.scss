@@ -1,4 +1,4 @@
-.container {
+.about-container {
   display: flex;
   flex-direction: column;
   align-items: flex-start; /* Changed to flex-start */
@@ -155,7 +155,53 @@
     width: 80%; // Make boxes take up more width on smaller screens
   }
 }
+//Navbar
+.navbar-custom {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.354); // Black transparent background
+  backdrop-filter: blur(10px); // Apply blur effect
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1); // Optional: Add a subtle border
+  z-index: 1000; // Ensure it’s above other content
+  padding: 0 20px; // Adjust padding as needed
 
+  .logo {
+    width: 100px; // Adjust size as needed
+    height: auto;
+  }
+
+  .navbar-nav {
+    .nav-link {
+      font-size: 1.1rem; // Increase font size
+      color: white; // Adjust text color
+    }
+  }
+}
+
+//Banner
+.banner-section {
+  position: relative;
+  text-align: center;
+  color: white;
+
+  .banner-image {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 2rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); // Optional: Add text shadow for better readability
+  }
+}
 
 .contact-us-container {
   display: flex;
@@ -164,7 +210,7 @@
   height: 100vh;
   background-size: cover;
   background-position: center;
-  background-color:rgb(43, 39, 39);
+  background-color: rgb(43, 39, 39);
   padding: 0 50px;
   position: relative; /* To allow absolute positioning of the title */
 }
@@ -181,10 +227,9 @@
   font-size: 20px;
 }
 
-
 /* Form container */
 .contact-form-container {
-  background-color:rgba(126, 198, 215, 0.7);
+  background-color: rgba(126, 198, 215, 0.7);
   padding: 50px;
   border-radius: 15px;
   max-width: 350px;
@@ -236,11 +281,10 @@
   align-items: flex-start;
   gap: 20px;
   width: 60%;
-  
 }
 
 .box {
-  background-color:rgba(126, 198, 215, 0.7);
+  background-color: rgba(126, 198, 215, 0.7);
   padding: 20px;
   width: 70%;
   text-align: start;
@@ -255,7 +299,7 @@
   align-items: first baseline;
   margin-bottom: 20px;
 }
-.box p{
+.box p {
   align-items: center;
 }
 .logo {
@@ -265,22 +309,22 @@
   background-color: transparent;
 }
 .logo-content {
-display: flex;
-align-items: center;
-background-color: white;
-border-radius: 10px;
-width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-radius: 10px;
+  width: 100%;
 }
 
 .logo {
   margin-left: 10px;
-margin-right: 20px; /* Adjust margin as needed */
+  margin-right: 20px; /* Adjust margin as needed */
 }
 .flex-row {
   display: flex;
   justify-content: space-between; /* Distribute space evenly */
   width: 75%; /* Ensure the container takes full width */
-  gap:15px;
+  gap: 15px;
 }
 .half-width {
   width: 60%; /* Set width to half of the first box */

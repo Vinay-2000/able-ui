@@ -3,7 +3,7 @@ import "./Home.scss";
 
 const About: React.FC = () => {
   return (
-    <div className="container">
+    <div className="about-container">
       <div className="main-content">
         <div className="image-container">
           <img
