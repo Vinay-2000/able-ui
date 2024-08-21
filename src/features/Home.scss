@@ -232,8 +232,8 @@
   background-color: rgba(126, 198, 215, 0.7);
   padding: 50px;
   border-radius: 15px;
-  max-width: 350px;
-  width: 90%;
+  max-width: 600px;
+  width: 50%;
 }
 
 /* Form label styles */
@@ -248,7 +248,7 @@
 /* Form input and textarea styles */
 .contact-form input,
 .contact-form textarea {
-  width: 100%;
+  width: 95%;
   padding: 10px;
   margin-bottom: 15px;
   border: none;
@@ -258,7 +258,6 @@
 /* Button styles */
 .contact-form button {
   float: left;
-  width: 45%;
   padding: 10px 20px;
   text-align: start;
   font-size: 14px;
