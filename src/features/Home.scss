@@ -63,7 +63,7 @@
 .read-more-button {
   padding: 10px 20px;
   text-align: start;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: bold;
   background-color: #f3ef0b;
   color: rgb(0, 0, 0);
@@ -182,27 +182,37 @@
 
 //Banner
 .banner-section {
+  display: flex;
   position: relative;
-  text-align: center;
+  text-align: left;
   color: white;
-
-  .banner-image {
-    width: 100%;
-    height: auto;
-    display: block;
-  }
-
-  .banner-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-size: 2rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); // Optional: Add text shadow for better readability
-  }
 }
 
+.banner-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.banner-text {
+  position: absolute;
+  bottom: 10%;
+  left: 5%;
+  align-items: left;
+}
+
+.banner-title {
+  font-size: 50px;
+  font-weight: bold;
+  text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.banner-subTitle {
+  font-size: 40px;
+  font-weight: bold;
+  text-align: left;
+  font-family: "Times New Roman", Times, serif;
+}
 .contact-us-container {
   display: flex;
   justify-content: flex-end;
@@ -419,7 +429,7 @@
 .see-more-button {
   padding: 10px 20px;
   text-align: start;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: bold;
   background-color: #f3ef0b;
   color: rgb(0, 0, 0);

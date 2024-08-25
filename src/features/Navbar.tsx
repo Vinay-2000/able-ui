@@ -4,13 +4,13 @@ import "./Home.scss";
 
 function MyNavbar() {
   return (
-    <Navbar className="navbar-custom" expand="lg">
+    <Navbar className="navbar-custom" expand="xxl">
       <Navbar.Brand href="#home">
         <img src="images/aboutImg/Able-logo.png" alt="Logo" className="logo" />
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
-        <Nav className="ml-auto">
+        <Nav className="justify-content-end flex-grow-1 pe-3">
           <Nav.Link href="#home">Home</Nav.Link>
           <Nav.Link href="#achievements">Achievements</Nav.Link>
           <Nav.Link href="#gallery">Gallery</Nav.Link>
