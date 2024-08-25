@@ -4,6 +4,7 @@ import StatisticsSection from "./StatisticsSection";
 import MyNavbar from "./Navbar";
 import Banner from "./Banner";
 import ContactUs from "./Contact";
+import Gallery from "./GalleryContainer";
 function Home() {
   return (
     <div>
@@ -11,6 +12,7 @@ function Home() {
       <Banner />
       <About />
       <StatisticsSection />
+      <Gallery />
       <ContactUs />
     </div>
   );

@@ -37,7 +37,7 @@
 
 .title {
   margin: 0;
-  font-size: 26px;
+  font-size: 30px;
   color: #009aa3;
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -68,10 +68,10 @@
   background-color: #f3ef0b;
   color: rgb(0, 0, 0);
   border: none;
-  width: 17%;
+  width: max-content;
   border-radius: 5px;
   cursor: pointer;
-  box-shadow: 3px 16px 16px rgba(5, 5, 5, 0.2);
+  box-shadow: 2px 4px 8px rgba(5, 5, 5, 0.5);
 }
 
 .logo {
@@ -327,4 +327,107 @@
 }
 .half-width {
   width: 60%; /* Set width to half of the first box */
+}
+
+//Gallery Styles
+.gallery {
+  -webkit-column-count: 4;
+  -moz-column-count: 4;
+  column-count: 4;
+  -webkit-column-width: 25%;
+  -moz-column-width: 25%;
+  column-width: 25%;
+  padding: 0 12px;
+  margin: 10px 100px;
+
+  @media (max-width: 991px) {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+    margin: 10px 20px;
+  }
+
+  @media (max-width: 480px) {
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-count: 1;
+    -webkit-column-width: 100%;
+    -moz-column-width: 100%;
+    column-width: 100%;
+    margin: 5px 10px;
+  }
+}
+.gallery-info {
+  padding-left: 110px;
+
+  &-title {
+    margin: 0;
+    font-size: 30px;
+    color: #009aa3;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  &-subtitle {
+    margin: 0;
+    font-size: 22px;
+  }
+}
+
+.gallery .pics {
+  -webkit-transition: all 350ms ease;
+  transition: all 350ms ease;
+  cursor: pointer;
+  margin-bottom: 12px;
+}
+.gallery .pics:hover {
+  filter: opacity(0.85);
+}
+
+.gallery .pics img {
+  width: 100%;
+  //border-radius: 5px; /* Slightly curved corners */
+  box-shadow: 2px 4px 7px rgb(146, 209, 234, 0.8); /* Soft shadow for a 3D effect */
+  background: linear-gradient(145deg, #ffffff, #f0f0f0); /* Glossy background */
+  position: relative;
+  overflow: hidden;
+}
+
+.gallery .pics img::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(
+    255,
+    255,
+    255,
+    0.3
+  ); /* White overlay for the glossy effect */
+  pointer-events: none;
+}
+.gallery .pics:nth-child(1) img {
+  border-top-left-radius: 50px;
+}
+
+/* Apply curved corner to the fourth image */
+//Adhoc solution should find a better solution
+.gallery .pics:nth-child(12) img {
+  border-top-right-radius: 50px;
+}
+.see-more-button {
+  padding: 10px 20px;
+  text-align: start;
+  font-size: 14px;
+  font-weight: bold;
+  background-color: #f3ef0b;
+  color: rgb(0, 0, 0);
+  border: none;
+  width: max-content;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 2px 4px 8px rgba(5, 5, 5, 0.5);
+  margin-left: 120px;
+  margin-bottom: 50px;
 }

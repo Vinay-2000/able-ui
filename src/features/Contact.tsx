@@ -1,23 +1,23 @@
-import React, { useState, useEffect } from 'react';
-import './Home.scss';
+import React, { useState, useEffect } from "react";
+import "./Home.scss";
 
 const ContactUs: React.FC = () => {
-
-  const [backgroundImage, setBackgroundImage] = useState<string>('');
+  const [backgroundImage, setBackgroundImage] = useState<string>("");
 
   useEffect(() => {
     const image = new Image();
-    image.src = '/images/aboutImg/backImage.png'; 
+    image.src = "/images/aboutImg/backImage.png";
 
     image.onload = () => {
-      setBackgroundImage(`url(${image.src})`); 
+      setBackgroundImage(`url(${image.src})`);
     };
   }, []);
-  
+
   return (
-    <div className="contact-us-container" style={{backgroundImage}}>
+    <div className="contact-us-container" style={{ backgroundImage }}>
       <div className="contact-title">
-        <h1>Contact Us</h1><br />
+        <h1>Contact Us</h1>
+        <br />
       </div>
       <div className="contact-form-container">
         <form className="contact-form">
@@ -57,7 +57,7 @@ const ContactUs: React.FC = () => {
             required
           ></textarea>
 
-          <button type="submit">Send Message</button>
+          <button className="read-more-button">Send Message...</button>
         </form>
       </div>
     </div>
