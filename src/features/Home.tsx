@@ -5,11 +5,13 @@ import MyNavbar from "./Navbar";
 import Banner from "./Banner";
 import ContactUs from "./Contact";
 import Gallery from "./GalleryContainer";
+import Services from "./Services";
 function Home() {
   return (
     <div>
       <MyNavbar />
       <Banner />
+      <Services />
       <About />
       <StatisticsSection />
       <Gallery />
