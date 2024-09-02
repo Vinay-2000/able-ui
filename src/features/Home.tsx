@@ -6,6 +6,7 @@ import Banner from "./Banner";
 import ContactUs from "./Contact";
 import Gallery from "./GalleryContainer";
 import Services from "./Services";
+import NewsBlog from "./NewsBlogData";
 function Home() {
   return (
     <div>
@@ -16,6 +17,7 @@ function Home() {
       <StatisticsSection />
       <Gallery />
       <ContactUs />
+      <NewsBlog />
     </div>
   );
 }

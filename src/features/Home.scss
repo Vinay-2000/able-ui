@@ -587,3 +587,161 @@
     font-size: 0.9em; /* Slightly smaller text */
   }
 }
+
+// NewsBlogData.scss
+
+.blog-wrapper {
+  left: 40px;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  padding: 0px; /* Optional: Add some padding around the content */
+}
+
+.News-title {
+  margin: 0;
+  font-size: 20px;
+  color: #009aa3;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  padding-left: 100px;
+}
+
+.news-blog-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  gap: 20px; /* Space between grid items */
+  width: 80%; /* Set a width for the container */
+  margin: 0 auto; /* Center the container */
+
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on medium screens */
+    width: 90%; /* Adjust width on medium screens */
+  }
+
+  @media (max-width: 480px) {
+    grid-template-columns: 1fr; /* 1 column on small screens */
+    width: 95%; /* Adjust width on small screens */
+  }
+}
+.news-divider {
+  border: none; /* Removes the default border */
+  height: 1px; /* Sets the height of the line */
+  background-color: #757272; /* Light color for the line */
+  margin: 20px 0; /* Space above and below the line */
+}
+
+
+.news-blog-item {
+  padding: 10px; /* Remove default padding */
+  margin: 0;
+  display: grid; /* Use CSS Grid for vertical alignment */
+  grid-template-rows: auto auto auto auto; /* Four rows for each content section */
+  align-items: start; /* Align items to the start of each grid cell */
+  width: 100%; /* Ensure each item uses full grid cell width */
+  gap:0;
+}
+
+.news-blog-title {
+  font-size: 1.2em;
+  margin: 0;
+  text-align: left;
+  padding-bottom: 20px;
+}
+
+.news-blog-image {
+  width: 100%; /* Use full width to utilize space */
+  height: auto;
+  margin: 0;
+  border-radius: 5px;
+  padding-bottom: 10px;
+}
+
+.news-blog-info {
+  font-size: 0.9em;
+  margin: 0;
+  text-align: left;
+  width: 100%; 
+  margin-bottom: 10px;
+  display: -webkit-box; /* For Safari and older browsers */
+  -webkit-box-orient: vertical; /* For Safari and older browsers */
+  -webkit-line-clamp: 4; /* Number of lines to display */
+  overflow: hidden; /* Hide the overflowing text */
+  text-overflow: ellipsis; /* Add ellipsis (...) at the end */
+  line-clamp: 4; /* Standard property for modern browsers */
+}
+
+
+.news-blog-comments {
+  text-align: left;
+  font-size: 0.8em;
+  color: #323131;
+  margin: 0;
+  margin-bottom: 20px;
+}
+.news-blog-comment {
+  display: flex; /* Use flexbox to align items in a row */
+  align-items: center; /* Center vertically */
+  justify-content: left; /* Center horizontally if needed */
+  font-size: 0.8em;
+  color: #353232; /* Adjust color as needed */
+  margin-top: 10px; /* Add some margin on top */
+
+  .news-source {
+    margin-right: 10px; /* Space after the source */
+  }
+
+  .separator {
+    margin: 0 5px; /* Space before and after the separator */
+  }
+
+  .news-time,
+  .comment-time {
+    display: flex; /* Align items in a row */
+    align-items: center; /* Center vertically */
+    font-size: 1.0em; /* Adjust text size as needed */
+    
+    .clock-icon,
+    .comment-icon {
+      width: 25px; /* Set a smaller width for the image */
+      height: 25px; /* Set a smaller height for the image */
+      margin-right: 5px; /* Space between image and text */
+    }
+  }
+  
+  .comment-section {
+    display: flex; /* Align icon and text in a row */
+    align-items: center; /* Center vertically */
+  }
+
+  .news-time i,
+  .comment-section i {
+    margin-right: 5px; /* Space between icon and text */
+  }
+}
+
+.see-more-button {
+  justify-self: start; /* Align button to the left side of its grid cell */
+  grid-column: span 3; /* Span across all columns */
+  padding: 10px 20px;
+  margin-left: 11%;
+  background-color: #f3ef0b;
+  color: black;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-align: left; /* Align text inside the button to the left */
+
+  &:hover {
+    background-color: #fbf702;
+  }
+
+  @media (max-width: 768px) {
+    grid-column: span 2; /* Span across 2 columns on medium screens */
+  }
+
+  @media (max-width: 480px) {
+    grid-column: span 1; /* Span across 1 column on small screens */
+  }
+}
