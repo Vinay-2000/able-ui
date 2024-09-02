@@ -7,6 +7,7 @@ import ContactUs from "./Contact";
 import Gallery from "./GalleryContainer";
 import Services from "./Services";
 import NewsBlog from "./NewsBlogData";
+import Supporters from "./Supporters";
 function Home() {
   return (
     <div>
@@ -17,6 +18,7 @@ function Home() {
       <StatisticsSection />
       <Gallery />
       <ContactUs />
+      <Supporters />
       <NewsBlog />
     </div>
   );

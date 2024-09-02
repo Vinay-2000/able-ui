@@ -745,3 +745,103 @@
     grid-column: span 1; /* Span across 1 column on small screens */
   }
 }
+
+
+//Supporters.scss
+
+.supporters-page {
+  text-align: left;
+  padding: 20px;
+}
+
+.supporters-title {
+  font-size: 2em;
+  color: #009aa3;
+  margin-bottom: 10px;
+  margin-left: 80px;
+}
+
+.supporters-info {
+  font-size: 1.2em;
+  color: #2b2a2a;
+  margin-bottom: 40px;
+  margin-left: 80px;
+  width: 60%;
+}
+
+.supporters-container {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 2fr)); 
+  gap: 20px 10px; 
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 60%;
+  padding-left: 20%;
+}
+
+.supporter-box {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(80, 173, 207, 0.5); /* Reduced shadow for subtle effect */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%; /* Use full width of the column */
+  max-width: 400px; /* Limit max width to keep content compact */
+  margin: auto; /* Center the box horizontally within the grid */
+}
+
+.supporter-logo {
+  width: 150px;
+  height: 80px;
+  margin-bottom: 10px;
+  object-fit: contain;
+
+}
+
+.supporter-name {
+  font-size: 1em;
+  color: #333;
+  line-height: 1.0;
+  width: 390px;
+  height: 40px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .supporters-container {
+    grid-template-columns: 1fr; /* 1 column on medium screens */
+    padding: 0 40px; /* Reduce side padding on medium screens */
+  }
+
+  .supporters-info {
+    margin-left: 40px; /* Adjust left margin on medium screens */
+    width: 80%; /* Increase info width */
+  }
+}
+
+@media (max-width: 480px) {
+  .supporters-page {
+    padding: 10px; /* Reduce padding on small screens */
+    text-align: center; /* Center align text for small screens */
+  }
+
+  .supporters-title,
+  .supporters-info {
+    margin-left: 0; /* Remove left margin for better alignment */
+    width: 100%; /* Use full width for text */
+  }
+
+  .supporters-container {
+    padding: 0; /* Remove padding to fit small screens better */
+    gap: 5px; /* Maintain 5px gap on small screens */
+  }
+
+  .supporter-box {
+    width: 100%; /* Full width for small screens */
+    max-width: 100%; /* Remove max width limit */
+  }
+}
