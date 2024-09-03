@@ -509,10 +509,10 @@
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  background-color: #f9f9f9;
+  background-color: white;
   padding: 20px;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px rgba(18, 127, 154, 0.4);
   width: 23%;
   position: relative;
   transition: all 0.3s ease; /* Smooth transition for layout changes */
@@ -843,5 +843,149 @@
   .supporter-box {
     width: 100%; /* Full width for small screens */
     max-width: 100%; /* Remove max width limit */
+  }
+}
+
+//Success Stories
+
+.success-stories{
+  padding-bottom: 30px;
+}
+.story-title {
+  margin: 0;
+  font-size: 40px;
+  color: #009aa3;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 100px;
+}
+
+.stories-container {
+  display: flex;
+  gap: 20px; /* Space between main story and additional stories */
+  flex-wrap: wrap; /* Allows the content to wrap on smaller screens */
+  padding-left: 150px;
+}
+
+.main-story {
+  flex: 2.0; /* Main story takes more space */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative; /* To position overlay content on the image */
+  padding-bottom: 10px;
+}
+
+.main-story-image-container {
+  position: relative; /* Allows overlay content positioning */
+  
+}
+
+.main-story-image {
+  width: 100%;
+  height: auto;
+  border-radius: 1px;
+  display: block; 
+  
+}
+
+.main-story-overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgba(86, 85, 85, 0.5); /* Semi-transparent background */
+  width: 100%;
+  color: #fff;
+  padding: 10px;
+}
+
+.main-story-info {
+  font-size: 1.2em;
+  margin: 0;
+  font-weight: bold;
+}
+
+.main-story-time {
+  font-size: 0.9em;
+  color: #2d2c2c;
+  padding-top: 15px;
+}
+
+.additional-stories {
+  flex: 1; /* Additional stories take less space */
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Adjusted space between stories */
+  margin-right: 100px;
+}
+
+.additional-story {
+  
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.story-info-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 10px;
+}
+.story-source{
+  padding-right: 5px;
+}
+.story-info {
+  flex: 1; /* Info section takes more space */
+  text-align: left;
+}
+
+.story-time {
+  font-size: 0.8em;
+  color: #353232;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.clock-icon {
+  width: 25px; /* Smaller width for the image */
+  height: 25px; /* Smaller height for the image */
+}
+
+.story-info-text {
+  font-size: 1em;
+  color: #333;
+  margin-bottom: 5px;
+  width: 95%;
+}
+
+.separator-line {
+  border: none;
+  border-top: 2px solid #171616;
+  margin: 10px 0;
+}
+
+.story-image {
+  width: 170px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 1px;
+  align-items: start;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .stories-container {
+    flex-direction: column;
+    padding-left: 20px; /* Adjust padding for smaller screens */
+  }
+
+  .main-story, .additional-stories {
+    flex: none; /* Reset flex property for mobile */
+  }
+
+  .main-story-overlay {
+    padding: 5px; /* Reduced padding for smaller screens */
   }
 }

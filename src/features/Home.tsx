@@ -8,6 +8,7 @@ import Gallery from "./GalleryContainer";
 import Services from "./Services";
 import NewsBlog from "./NewsBlogData";
 import Supporters from "./Supporters";
+import SuccessStories from "./SuccessStories";
 function Home() {
   return (
     <div>
@@ -20,6 +21,7 @@ function Home() {
       <ContactUs />
       <Supporters />
       <NewsBlog />
+      <SuccessStories />
     </div>
   );
 }
