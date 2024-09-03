@@ -9,6 +9,7 @@ import Services from "./Services";
 import NewsBlog from "./NewsBlogData";
 import Supporters from "./Supporters";
 import SuccessStories from "./SuccessStories";
+import SocialMediaPage from "./SocialMedia";
 function Home() {
   return (
     <div>
@@ -22,6 +23,7 @@ function Home() {
       <Supporters />
       <NewsBlog />
       <SuccessStories />
+      <SocialMediaPage />
     </div>
   );
 }
