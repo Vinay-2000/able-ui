@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/rawwd-ui/static/css/main.f6a05c85.css",
+    "main.js": "/rawwd-ui/static/js/main.1624fa16.js",
+    "static/js/453.0ba658b5.chunk.js": "/rawwd-ui/static/js/453.0ba658b5.chunk.js",
+    "index.html": "/rawwd-ui/index.html",
+    "main.f6a05c85.css.map": "/rawwd-ui/static/css/main.f6a05c85.css.map",
+    "main.1624fa16.js.map": "/rawwd-ui/static/js/main.1624fa16.js.map",
+    "453.0ba658b5.chunk.js.map": "/rawwd-ui/static/js/453.0ba658b5.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f6a05c85.css",
+    "static/js/main.1624fa16.js"
+  ]
+}
