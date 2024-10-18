@@ -484,15 +484,13 @@
   margin-bottom: 50px;
 }
 
-
 // services style
 .services-container {
-  padding: 80px; /* Uniform padding */
+  padding: 50px 80px; /* Uniform padding */
   display: flex;
   flex-wrap: wrap; /* Allows items to wrap to the next line */
   justify-content: space-between;
   gap: 10px; /* Space between items */
-  margin-bottom: 20px;
 
   @media (max-width: 768px) {
     padding: 20px; /* Reduce padding on smaller screens */
@@ -551,7 +549,7 @@
 }
 
 .service-title {
-  font-size: 1.0em;
+  font-size: 1em;
   margin-bottom: 10px;
 
   @media (max-width: 768px) {
@@ -631,7 +629,6 @@
   margin: 20px 0; /* Space above and below the line */
 }
 
-
 .news-blog-item {
   padding: 10px; /* Remove default padding */
   margin: 0;
@@ -639,7 +636,7 @@
   grid-template-rows: auto auto auto auto; /* Four rows for each content section */
   align-items: start; /* Align items to the start of each grid cell */
   width: 100%; /* Ensure each item uses full grid cell width */
-  gap:0;
+  gap: 0;
 }
 
 .news-blog-title {
@@ -661,7 +658,7 @@
   font-size: 0.9em;
   margin: 0;
   text-align: left;
-  width: 100%; 
+  width: 100%;
   margin-bottom: 10px;
   display: -webkit-box; /* For Safari and older browsers */
   -webkit-box-orient: vertical; /* For Safari and older browsers */
@@ -670,7 +667,6 @@
   text-overflow: ellipsis; /* Add ellipsis (...) at the end */
   line-clamp: 4; /* Standard property for modern browsers */
 }
-
 
 .news-blog-comments {
   text-align: left;
@@ -699,8 +695,8 @@
   .comment-time {
     display: flex; /* Align items in a row */
     align-items: center; /* Center vertically */
-    font-size: 1.0em; /* Adjust text size as needed */
-    
+    font-size: 1em; /* Adjust text size as needed */
+
     .clock-icon,
     .comment-icon {
       width: 25px; /* Set a smaller width for the image */
@@ -708,7 +704,7 @@
       margin-right: 5px; /* Space between image and text */
     }
   }
-  
+
   .comment-section {
     display: flex; /* Align icon and text in a row */
     align-items: center; /* Center vertically */
@@ -746,7 +742,6 @@
   }
 }
 
-
 //Supporters.scss
 
 .supporters-page {
@@ -771,8 +766,8 @@
 
 .supporters-container {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 2fr)); 
-  gap: 20px 10px; 
+  grid-template-columns: repeat(2, minmax(0, 2fr));
+  gap: 20px 10px;
   justify-content: center;
   align-items: center;
   width: 80%;
@@ -799,13 +794,12 @@
   height: 80px;
   margin-bottom: 10px;
   object-fit: contain;
-
 }
 
 .supporter-name {
   font-size: 1em;
   color: #333;
-  line-height: 1.0;
+  line-height: 1;
   width: 390px;
   height: 40px;
 }
@@ -848,7 +842,7 @@
 
 //Success Stories
 
-.success-stories{
+.success-stories {
   padding-bottom: 30px;
 }
 .story-title {
@@ -869,7 +863,7 @@
 }
 
 .main-story {
-  flex: 2.0; /* Main story takes more space */
+  flex: 2; /* Main story takes more space */
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -879,15 +873,13 @@
 
 .main-story-image-container {
   position: relative; /* Allows overlay content positioning */
-  
 }
 
 .main-story-image {
   width: 100%;
   height: auto;
   border-radius: 1px;
-  display: block; 
-  
+  display: block;
 }
 
 .main-story-overlay {
@@ -920,7 +912,6 @@
 }
 
 .additional-story {
-  
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -932,7 +923,7 @@
   align-items: flex-start;
   gap: 10px;
 }
-.story-source{
+.story-source {
   padding-right: 5px;
 }
 .story-info {
@@ -981,7 +972,8 @@
     padding-left: 20px; /* Adjust padding for smaller screens */
   }
 
-  .main-story, .additional-stories {
+  .main-story,
+  .additional-stories {
     flex: none; /* Reset flex property for mobile */
   }
 
@@ -1048,7 +1040,12 @@
 }
 
 .footer {
-  background-color: rgba(60, 58, 58, 0.7); /* Light black background with blur effect */
+  background-color: rgba(
+    60,
+    58,
+    58,
+    0.7
+  ); /* Light black background with blur effect */
   backdrop-filter: blur(5px); /* Apply blur effect */
   padding: 10px 20px;
   display: flex;
@@ -1086,7 +1083,8 @@
     width: 30px;
     height: 30px;
   }
-  .footer-links a, .footer-text p {
+  .footer-links a,
+  .footer-text p {
     font-size: 0.8rem;
   }
 
