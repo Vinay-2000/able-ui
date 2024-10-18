@@ -10,10 +10,7 @@ function Banner() {
         className="banner-image"
       />
       <div className="banner-text">
-        <p className="banner-title">
-          Rehabilitation Aids Workshop By Women With <br />
-          Disability
-        </p>
+        <p className="banner-title">ABLE</p>
         <p className="banner-subTitle">
           Promote Equality For Women With Disability
         </p>

@@ -18,12 +18,11 @@ const About: React.FC = () => {
             Promote Equality For Women With Disability
           </h2>
           <p className="description">
-            Rehabilitation Aids Workshop by Women with Disability (RAWWD) was
-            founded in 1997 as an offshoot of Mobility India, one of the largest
-            NGOs in India focused on providing aids for people with physical
-            disabilities. RAWWD was established with the sole aim of assisting
-            and encouraging women with disabilities to set up and run workshops
-            that produce quality...
+            ABLE was founded in 1997 as an offshoot of Mobility India, one of
+            the largest NGOs in India focused on providing aids for people with
+            physical disabilities. RAWWD was established with the sole aim of
+            assisting and encouraging women with disabilities to set up and run
+            workshops that produce quality...
           </p>
           <button className="read-more-button">Read More...</button>
           <br />
