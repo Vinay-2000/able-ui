@@ -1103,3 +1103,22 @@
 .grayscale-bg {
   filter: grayscale(100%); /* Make image black and white */
 }
+
+//Donate.tsx
+.Donate-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120vh;  // Ensures it takes up the full viewport height
+  width: 100%;    // Ensures it takes up the full viewport width
+  object-fit: cover;
+  padding: 20px;  // Provides some padding around the image for better look on smaller screens
+
+  .SBI-Image {
+    max-width: 100%; // Ensures the image scales down responsively within its container
+    height: auto;    // Keeps the image's aspect ratio intact
+    object-fit: contain; // Ensures the entire image is visible within its container
+    border: 1px solid #ccc; // Optional: Adds a subtle border around the image
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); // Optional: Adds a soft shadow to the image for visual appeal
+  }
+}
