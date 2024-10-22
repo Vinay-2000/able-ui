@@ -9,22 +9,22 @@ interface Service {
 
 const servicesData: Service[] = [
   {
-    logo: '/images/aboutImg/icon1.png',
+    logo: `${process.env.PUBLIC_URL}/images/aboutImg/icon1.png`,
     title: 'ORTHOTIC SERVICES',
     info: 'Ankle Foot Orthosis, Knee Ankle Foot Orthosis, Hip Knee Ankle Foot Orthosis...',
   },
   {
-    logo: '/images/aboutImg/icon2.png',
+    logo: `${process.env.PUBLIC_URL}/images/aboutImg/icon2.png`,
     title: 'PROSTHETIC SERVICES',
     info: 'Flower and Upper Limb Prosthesis-Modular and conventional.',
   },
   {
-    logo: '/images/aboutImg/icon3.png',
+    logo: `${process.env.PUBLIC_URL}/images/aboutImg/icon3.png`,
     title: 'WALKING AIDS',
     info: 'Axillary crutches, elbow crutches, walkers, walking sticks, wheel chairs, etc',
   },
   {
-    logo: '/images/aboutImg/icon4.png',
+    logo: `${process.env.PUBLIC_URL}/images/aboutImg/icon4.png`,
     title: 'PRE-FABRICATED ITEMS',
     info: 'Belts and braces, lumbar and sacral belts, abdominal belts, chest belts...',
   },

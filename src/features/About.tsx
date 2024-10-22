@@ -7,7 +7,7 @@ const About: React.FC = () => {
       <div className="main-content">
         <div className="image-container">
           <img
-            src="/images/aboutImg/gallery5.jpg"
+            src={`${process.env.PUBLIC_URL}/images/aboutImg/gallery5.jpg`}
             alt="Round"
             className="round-image"
           />

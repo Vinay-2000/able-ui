@@ -3,22 +3,22 @@ import "./Home.scss"; // Assuming you'll write the CSS here
 
 // Step 1: Create an array of supporters
 const supporters = [
-  { logo: "/images/aboutImg/acn_logo.png", name: "Accenture" },
+  { logo: `${process.env.PUBLIC_URL}/images/aboutImg/acn_logo.png`, name: "Accenture" },
   {
-    logo: "/images/aboutImg/Cheshire.png",
+    logo: `${process.env.PUBLIC_URL}/images/aboutImg/Cheshire.png`,
     name: "Cheshire Homes for providing start-up space",
   },
-  { logo: "/images/aboutImg/mobility.png", name: "Mobility India" },
+  { logo: `${process.env.PUBLIC_URL}/images/aboutImg/mobility.png`, name: "Mobility India" },
   {
-    logo: "/images/aboutImg/image.png",
+    logo: `${process.env.PUBLIC_URL}/images/aboutImg/image.png`,
     name: "MIBLOU for standing the project",
   },
   {
-    logo: "/images/aboutImg/ddp.png",
+    logo: `${process.env.PUBLIC_URL}/images/aboutImg/ddp.png`,
     name: "Disability Development Partners for renovationg workshop, providing new machines and partial running costs for a year",
   },
   {
-    logo: "/images/aboutImg/vatech.jpg",
+    logo: `${process.env.PUBLIC_URL}/images/aboutImg/vatech.jpg`,
     name: "VA-Tech for renovating the office",
   },
 ];

@@ -6,7 +6,7 @@ function MyNavbar() {
   return (
     <Navbar className="navbar-custom" expand="xxl">
       <Navbar.Brand href="#home">
-        <img src="images/aboutImg/Able-logo.png" alt="Logo" className="logo" />
+        <img src={`${process.env.PUBLIC_URL}/images/aboutImg/Able-logo.png`} alt="Logo" className="logo" />
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">

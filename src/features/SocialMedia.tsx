@@ -3,7 +3,7 @@ import "./Home.scss";
 
 const SocialMediaPage: React.FC = () => {
   // Using a hook to dynamically set the background image
-  const backgroundImage = "url('/images/aboutImg/home-banner-image.png')"; // Replace with your image path
+  const backgroundImage = `url(${process.env.PUBLIC_URL}/images/aboutImg/home-banner-image.png)`; // Replace with your image path
 
   return (
     <div className="social-media-container">
@@ -16,17 +16,17 @@ const SocialMediaPage: React.FC = () => {
           <div className="social-icons">
             {/* Social media logos remain in color */}
             <img
-              src="images/aboutImg/facebook.png"
+              src={`${process.env.PUBLIC_URL}/images/aboutImg/facebook.png`}
               alt="Facebook"
               className="social-icon"
             />
             <img
-              src="images/aboutImg/instagram.png"
+              src={`${process.env.PUBLIC_URL}/images/aboutImg/instagram.png`}
               alt="Instagram"
               className="social-icon"
             />
             <img
-              src="images/aboutImg/linkedin.png"
+              src={`${process.env.PUBLIC_URL}/images/aboutImg/linkedin.png`}
               alt="LinkedIn"
               className="social-icon"
             />

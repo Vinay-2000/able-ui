@@ -59,7 +59,7 @@ const StatisticsSection: React.FC = () => {
     <div className="statistics-container" style={{ marginBottom: '80px' }}>
       <div className="statistics-box">
         <img
-          src="/images/aboutImg/compaigns.png"
+          src={`${process.env.PUBLIC_URL}/images/aboutImg/compaigns.png`}
           alt="Logo 1"
           className="logo"
         />
@@ -67,13 +67,13 @@ const StatisticsSection: React.FC = () => {
         <p className="statistics-description">Total campaigns</p>
       </div>
       <div className="statistics-box">
-        <img src="/images/aboutImg/Donors.png" alt="Logo 2" className="logo" />
+        <img src={`${process.env.PUBLIC_URL}/images/aboutImg/Donors.png`} alt="Logo 2" className="logo" />
         <Counter end={1785} duration={2000} />
         <p className="statistics-description">Satisfied donors</p>
       </div>
       <div className="statistics-box">
         <img
-          src="/images/aboutImg/RaisingGraph.png"
+          src={`${process.env.PUBLIC_URL}/images/aboutImg/RaisingGraph.png`}
           alt="Logo 3"
           className="logo"
         />
@@ -82,7 +82,7 @@ const StatisticsSection: React.FC = () => {
       </div>
       <div className="statistics-box">
         <img
-          src="/images/aboutImg/Volunteers.png"
+          src={`${process.env.PUBLIC_URL}/images/aboutImg/Volunteers.png`}
           alt="Logo 4"
           className="logo"
         />{" "}

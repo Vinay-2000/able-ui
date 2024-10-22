@@ -11,25 +11,25 @@ interface Story {
 const SuccessStories: React.FC = () => {
   const stories: Story[] = [
     {
-      image: '/images/galleryImages/gallery14.png',
+      image: `${process.env.PUBLIC_URL}/images/galleryImages/gallery14.png`,
       info: 'ABLE has provided 40,000 differently-abled people with prosthetics and supporting devices',
       time: '1 min read',
       date: 'July 16 2024',
     },
     {
-      image: '/images/galleryImages/gallery1.jpg',
+      image: `${process.env.PUBLIC_URL}/images/galleryImages/gallery1.jpg`,
       info: 'ABLE has provided 40,000 differently-abled people with prosthetics and supporting devices',
       time: '1 min read',
       date: 'July 16 2024',
     },
     {
-      image: '/images/galleryImages/gallery4.jpg',
+      image: `${process.env.PUBLIC_URL}/images/galleryImages/gallery4.jpg`,
       info: 'ABLE has provided 40,000 differently-abled people with prosthetics and supporting devices',
       time: '1 min read',
       date: 'July 16 2024',
     },
     {
-      image: '/images/galleryImages/gallery7.jpg',
+      image: `${process.env.PUBLIC_URL}/images/galleryImages/gallery7.jpg`,
       info: 'ABLE has provided 40,000 differently-abled people with prosthetics and supporting devices',
       time: '1 min read',
       date: 'July 16 2024',
@@ -51,7 +51,7 @@ const SuccessStories: React.FC = () => {
           <span className="main-story-time">
                     <span className="story-source">{stories[0].date}</span>
                     <span className="separator">|</span>
-                    <img src="/images/aboutImg/clock.jpeg" className="clock-icon" alt="Clock icon" />
+                    <img src={`${process.env.PUBLIC_URL}/images/aboutImg/clock.jpeg`} className="clock-icon" alt="Clock icon" />
                     <span>{stories[0].time}</span>
             </span>
         </div>
@@ -65,7 +65,7 @@ const SuccessStories: React.FC = () => {
                   <span className="story-time">
                     <span className="story-source">{story.date}</span>
                     <span className="separator">|</span>
-                    <img src="/images/aboutImg/clock.jpeg" className="clock-icon" alt="Clock icon" />
+                    <img src={`${process.env.PUBLIC_URL}/images/aboutImg/clock.jpeg`} className="clock-icon" alt="Clock icon" />
                     <span>{story.time}</span>
                   </span>
                   <p className="story-info-text">{story.info}</p>

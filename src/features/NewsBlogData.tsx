@@ -4,61 +4,61 @@ import "./Home.scss"; // Make sure to create this file for styling
 const newsBlogData = [
   {
     title: "Deftly aiding disability",
-    image: "/images/galleryImages/gallery10.jpg",
+    image: `${process.env.PUBLIC_URL}/images/galleryImages/gallery10.jpg`,
     information: "Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, bsvkjf bvkjdfv hejbvk jdfvk quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut...",
     comments: "4",
   },
   {
     title: "Deftly aiding disability",
-    image: "/images/galleryImages/gallery5.jpg",
+    image: `${process.env.PUBLIC_URL}/images/galleryImages/gallery5.jpg`,
     information: "Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis dkjbvjkvk fvkbjfkdbv bjfvkjbfdj kvbfjkvfjkb vakjlb vnostrum exercitationem ullam corporis suscipit laboriosam, nisi ut...",
     comments: "2",
   },
   {
     title: "Deftly aiding disability",
-    image: "/images/galleryImages/gallery4.jpg",
+    image: `${process.env.PUBLIC_URL}/images/galleryImages/gallery4.jpg`,
     information: "Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, jhebvh jdfbvkjdb vkjabdv jkbsvjkb quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut...",
     comments: "3",
   },
   {
     title: "Deftly aiding disability",
-    image: "/images/galleryImages/gallery6.jpg",
+    image: `${process.env.PUBLIC_URL}/images/galleryImages/gallery6.jpg`,
     information: "Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut...",
     comments: "9",
   },
   {
     title: "Deftly aiding disability",
-    image: "/images/galleryImages/gallery10.jpg",
+    image: `${process.env.PUBLIC_URL}/images/galleryImages/gallery10.jpg`,
     information: "Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut...",
     comments: "1",
   },
   {
     title: "Deftly aiding disability",
-    image: "/images/galleryImages/gallery3.jpg",
+    image: `${process.env.PUBLIC_URL}/images/galleryImages/gallery3.jpg`,
     information: "Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut...",
     comments: "1",
   },
   {
     title: "Deftly aiding disability",
-    image: "/images/galleryImages/gallery1.jpg",
+    image: `${process.env.PUBLIC_URL}//images/galleryImages/gallery1.jpg`,
     information: "Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut...",
     comments: "6",
   },
   {
     title: "Deftly aiding disability",
-    image: "/images/galleryImages/gallery12.jpg",
+    image: `${process.env.PUBLIC_URL}/images/galleryImages/gallery12.jpg`,
     information: "Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut...",
     comments: "5",
   },
   {
     title: "Deftly aiding disability",
-    image: "/images/galleryImages/gallery13.jpg",
+    image: `${process.env.PUBLIC_URL}/images/galleryImages/gallery13.jpg`,
     information: "Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut...",
     comments: "2",
   },
   {
     title: "Deftly aiding disability",
-    image: "/images/galleryImages/gallery14.jpg",
+    image: `${process.env.PUBLIC_URL}/images/galleryImages/gallery14.jpg`,
     information: "Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut...",
     comments: "12",
   },
@@ -88,12 +88,12 @@ const NewsBlog: React.FC = () => {
                 <span className="news-source">Bangalore Mirror</span>
                 <span className="separator">|</span>
                 <span className="news-time">
-                  <img src="/images/aboutImg/clock.jpeg" className="clock-icon" alt="Clock icon" />
+                  <img src={`${process.env.PUBLIC_URL}/images/aboutImg/clock.jpeg`} className="clock-icon" alt="Clock icon" />
                   <span>1 min read</span>
                 </span>
                 <span className="separator">|</span>
                 <span className="comment-time">
-                  <img src="/images/aboutImg/comment.jpeg" className="comment-icon" alt="Comment icon" />
+                  <img src={`${process.env.PUBLIC_URL}/images/aboutImg/comment.jpeg`} className="comment-icon" alt="Comment icon" />
                   <span>{item.comments}</span>
                 </span>
               </div>

@@ -6,7 +6,7 @@ const ContactUs: React.FC = () => {
 
   useEffect(() => {
     const image = new Image();
-    image.src = "/images/aboutImg/backImage.png";
+    image.src = `${process.env.PUBLIC_URL}/images/aboutImg/backImage.png`;
 
     image.onload = () => {
       setBackgroundImage(`url(${image.src})`);

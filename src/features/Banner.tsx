@@ -5,7 +5,7 @@ function Banner() {
   return (
     <div className="banner-section">
       <img
-        src="images/aboutImg/main.jpeg" // Adjust the path to your image
+        src={`${process.env.PUBLIC_URL}/images/aboutImg/main.jpeg`} // Adjust the path to your image
         alt="banner"
         className="banner-image"
       />
