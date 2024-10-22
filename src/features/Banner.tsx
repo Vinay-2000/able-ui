@@ -1,7 +1,14 @@
 import React from "react";
+import { useNavigate } from "react-router-dom"; // Import useNavigate for navigation
 import "./Home.scss"; // Import the SCSS file for styling
 
 function Banner() {
+  const navigate = useNavigate(); // Initialize useNavigate
+
+  const handleDonateClick = () => {
+    navigate("/donate"); // Navigate to the Donate page
+  };
+
   return (
     <div className="banner-section">
       <img
@@ -14,7 +21,9 @@ function Banner() {
         <p className="banner-subTitle">
           Promote Equality For Women With Disability
         </p>
-        <button className="read-more-button">Donate Now...</button>
+        <button className="read-more-button" onClick={handleDonateClick}>
+          Donate Now...
+        </button>
       </div>
     </div>
   );
