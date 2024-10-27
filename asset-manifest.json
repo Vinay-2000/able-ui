@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/rawwd-ui/static/css/main.4026d13a.css",
-    "main.js": "/rawwd-ui/static/js/main.1e27107a.js",
-    "static/js/453.0ba658b5.chunk.js": "/rawwd-ui/static/js/453.0ba658b5.chunk.js",
-    "index.html": "/rawwd-ui/index.html",
-    "main.4026d13a.css.map": "/rawwd-ui/static/css/main.4026d13a.css.map",
-    "main.1e27107a.js.map": "/rawwd-ui/static/js/main.1e27107a.js.map",
-    "453.0ba658b5.chunk.js.map": "/rawwd-ui/static/js/453.0ba658b5.chunk.js.map"
+    "main.css": "/able-ui/static/css/main.4026d13a.css",
+    "main.js": "/able-ui/static/js/main.27eb6ad3.js",
+    "static/js/453.bc6aa5bd.chunk.js": "/able-ui/static/js/453.bc6aa5bd.chunk.js",
+    "index.html": "/able-ui/index.html",
+    "main.4026d13a.css.map": "/able-ui/static/css/main.4026d13a.css.map",
+    "main.27eb6ad3.js.map": "/able-ui/static/js/main.27eb6ad3.js.map",
+    "453.bc6aa5bd.chunk.js.map": "/able-ui/static/js/453.bc6aa5bd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4026d13a.css",
-    "static/js/main.1e27107a.js"
+    "static/js/main.27eb6ad3.js"
   ]
 }
