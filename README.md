@@ -1,11 +1,12 @@
-# Rawwd
+# ABLE
 
-Frond-end for the Rawwd NGO website.
+Frond-end for the Able NGO website.
 
 # Getting Started With Develpoment
+
 In Folder open terminal -
 Commands:
-git clone -b "FEATURE/initial" https://github.com/Vinay-2000/rawwd-ui.git
+git clone -b "FEATURE/initial" https://github.com/Vinay-2000/able-ui.git
 This will clone the branch to your local.
 
 Open in Visual Studio:

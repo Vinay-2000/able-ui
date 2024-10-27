@@ -8,7 +8,7 @@ const About: React.FC = () => {
         <div className="image-container">
           <img
             src={`${process.env.PUBLIC_URL}/images/aboutImg/gallery5.jpg`}
-            alt="Round"
+            alt="image"
             className="round-image"
           />
         </div>
@@ -20,7 +20,7 @@ const About: React.FC = () => {
           <p className="description">
             ABLE was founded in 1997 as an offshoot of Mobility India, one of
             the largest NGOs in India focused on providing aids for people with
-            physical disabilities. RAWWD was established with the sole aim of
+            physical disabilities. ABLE was established with the sole aim of
             assisting and encouraging women with disabilities to set up and run
             workshops that produce quality...
           </p>
