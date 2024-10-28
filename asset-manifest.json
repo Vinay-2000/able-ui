@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/able-ui/static/css/main.4026d13a.css",
+    "main.css": "/able-ui/static/css/main.8bda44a0.css",
     "main.js": "/able-ui/static/js/main.27eb6ad3.js",
     "static/js/453.bc6aa5bd.chunk.js": "/able-ui/static/js/453.bc6aa5bd.chunk.js",
     "index.html": "/able-ui/index.html",
-    "main.4026d13a.css.map": "/able-ui/static/css/main.4026d13a.css.map",
+    "main.8bda44a0.css.map": "/able-ui/static/css/main.8bda44a0.css.map",
     "main.27eb6ad3.js.map": "/able-ui/static/js/main.27eb6ad3.js.map",
     "453.bc6aa5bd.chunk.js.map": "/able-ui/static/js/453.bc6aa5bd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4026d13a.css",
+    "static/css/main.8bda44a0.css",
     "static/js/main.27eb6ad3.js"
   ]
 }
