@@ -386,9 +386,6 @@
   -webkit-column-count: 4;
   -moz-column-count: 4;
   column-count: 4;
-  -webkit-column-width: 25%;
-  -moz-column-width: 25%;
-  column-width: 25%;
   padding: 0 12px;
   margin: 10px 100px;
 
@@ -403,9 +400,6 @@
     -webkit-column-count: 1;
     -moz-column-count: 1;
     column-count: 1;
-    -webkit-column-width: 100%;
-    -moz-column-width: 100%;
-    column-width: 100%;
     margin: 5px 10px;
   }
 }
@@ -1109,14 +1103,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 120vh;  // Ensures it takes up the full viewport height
-  width: 100%;    // Ensures it takes up the full viewport width
+  height: 120vh; // Ensures it takes up the full viewport height
+  width: 100%; // Ensures it takes up the full viewport width
   object-fit: cover;
-  padding: 20px;  // Provides some padding around the image for better look on smaller screens
+  padding: 20px; // Provides some padding around the image for better look on smaller screens
 
   .SBI-Image {
     max-width: 100%; // Ensures the image scales down responsively within its container
-    height: auto;    // Keeps the image's aspect ratio intact
+    height: auto; // Keeps the image's aspect ratio intact
     object-fit: contain; // Ensures the entire image is visible within its container
     border: 1px solid #ccc; // Optional: Adds a subtle border around the image
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); // Optional: Adds a soft shadow to the image for visual appeal
