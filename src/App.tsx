@@ -6,10 +6,11 @@ import Home from "./features/Home";
 function App() {
   return (
     <Router>
-      <Routes>
+      <Home />
+      {/* <Routes>
         <Route path="/able-ui" element={<Home />} />
         <Route path="/donate" element={<Donate />} />
-      </Routes>
+      </Routes> */}
     </Router>
   );
 }
